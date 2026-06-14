@@ -2,7 +2,7 @@ import { useEffect, useRef, useState, useCallback } from "react";
 import { io } from "socket.io-client";
 import { applySocketEvent } from "../utils/taskUtils";
 
-const SOCKET_URL = import.meta.env.VITE_SOCKET_URL || "http://localhost:5001";
+const SOCKET_URL = import.meta.env.VITE_SOCKET_URL || "https://kanban-websocket.onrender.com";
 
 export function useSocket() {
   const socketRef = useRef(null);
